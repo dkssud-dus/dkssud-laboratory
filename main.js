@@ -19,7 +19,7 @@ function renderProjects(section, list) {
       .map((tag) => `<span class="Tag">${tag}</span>`)
       .join("");
 
-    li.innerHTML = `<a href="${project.path}">${project.title}</a><div class="Tags">${tags}</div>`;
+    li.innerHTML = `<a href="${project.path}" target="_blank">${project.title}</a>...`;
 
     // Tooltip GIF
     const tooltip = document.createElement("img");
